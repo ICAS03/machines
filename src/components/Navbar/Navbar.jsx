@@ -56,6 +56,7 @@ const Navbar = () => {
         <div className="align_center navbar_links">
           <Link title="Home" link="/"></Link>
           <Link title="Products" link="/products"></Link>
+          <Link title="Chat" link="/chat"></Link>
           {!user && <><Link title="LogIn" link="/login"></Link>
           <Link title="SignUp" link="/signup"></Link></>}
           {user && <><Link title="My Orders" link="/myorders"></Link>
@@ -64,7 +65,6 @@ const Navbar = () => {
             Cart<p className="align_center cart_counter">{cart.length}</p>
           </NavLink></>}
         </div>
-     
     </nav>
   );
 };
