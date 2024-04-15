@@ -1,0 +1,47 @@
+.form_loginpage {
+  justify-content: center;
+}
+
+.authentication_form {
+  width: 30%;
+  padding: 32px 48px;
+  margin-top: 32px;
+  background-color: #fff;
+}
+
+.authentication_form h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form_inputs div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_inputs label {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 13px 10px;
+}
+
+.form_input_text {
+  height: 32px;
+  padding: 0 8px;
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.submit_btn {
+  height: 40px;
+  width: 100%;
+  margin: 25px 0 10px;
+  color: #fff;
+}
+
+.form_error {
+  color: red;
+}
