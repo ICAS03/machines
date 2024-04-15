@@ -11,7 +11,6 @@ const systemMessages = {
     content: "Act as a friendly yet professional customer service chatbot to assist the user"
 }
 
-
 const Chat = () => {
      const [typing , setTyping] = useState(false);
      const [messages , setMessages] = useState([
@@ -64,7 +63,7 @@ const Chat = () => {
            },
            body: JSON.stringify(apiRequestBody)
         }).then((data) => {
-            return data.json();
+            return data.json()
         }).then((data) => {
             setMessages(
                 [...chatMessages , {
