@@ -19,7 +19,7 @@ const HomePage = () => {
         subtitle="Experience the magic with the touch of Macbook Air"
         link="/product/66098c443b0ea3ea3c405368"
         image={mac}
-      ></HeroSection>
+      ></HeroSection>  
     </div>
   );
 };
