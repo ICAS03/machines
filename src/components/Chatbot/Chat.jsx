@@ -62,16 +62,22 @@ const Chat = () => {
                 "Content-Type": "application/json"
            },
            body: JSON.stringify(apiRequestBody)
+        }).then((response) => {
+            if(!response.ok){
+                throw new Error('HTTP ERROR');
+            }
+            return response.json()
         }).then((data) => {
-            return data.json()
-        }).then((data) => {
-            setMessages(
+            console.log(data)
+            /*setMessages(
                 [...chatMessages , {
                     message: data.choices[0].message.content,
                     sender: "GROQ"
                 }]
-            );
+            );*/
             setTyping(false);
+        }).catch(error => {
+            console.error('Fetch error' , error);
         })
      }
 
