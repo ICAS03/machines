@@ -4,7 +4,7 @@ import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import { MainContainer, ChatContainer , MessageList , Message , MessageInput , TypingIndicator } from '@chatscope/chat-ui-kit-react';
 import { useState } from 'react';
 
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = process.env.GROQ_API_KEY
 
 const systemMessage = {
     role: "system",
